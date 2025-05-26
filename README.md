@@ -99,7 +99,7 @@ cd SearchEngine/build/tests
 
 **👨🏼‍💻 Sam V.**
 
-**📨 samvkolesnikov@outlook.com**
+**📨 tube-tutors48@icloud.com**
 
 ---
 ---
@@ -193,7 +193,7 @@ cd SearchEngine/build/tests
 
 **👨🏼‍💻 Sam V.**
 
-**📨 samvkolesnikov@outlook.com**
+**📨 tube-tutors48@icloud.com**
 
 ---
 ---
@@ -288,7 +288,7 @@ cd SearchEngine/build/tests
 
 **👨🏼‍💻 Sam V.**
 
-**📨 samvkolesnikov@outlook.com**
+**📨 tube-tutors48@icloud.com**
 
 ---
 ---
