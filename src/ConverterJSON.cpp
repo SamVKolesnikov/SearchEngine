@@ -37,8 +37,8 @@ int ConverterJSON::GetResponsesLimit() {
 }
 
 vector<string> ConverterJSON::GetRequests() {
-    if (!std::ifstream("requests.json").good()) {               // Добавлена проверка
-        return {}; // Возвращаем пустой список, если файла нет
+    if (!std::ifstream("requests.json").good()) {      // Добавлена проверка
+        return {};                                     // Возвращаем пустой список, если файла нет
     }
     try {
         LoadRequests();
@@ -70,15 +70,15 @@ void ConverterJSON::putAnswers(const std::vector<std::vector<RelativeIndex>>& an
         }
         else if (answers[i].size() == 1) {
             result["answers"][req_id]["result"] = true;
-            result["answers"][req_id]["docid"] = answers[i][0].doc_id;  // Используем doc_id вместо first
-            result["answers"][req_id]["rank"] = round(answers[i][0].rank * 1000) / 1000.0;  // Используем rank вместо second
+            result["answers"][req_id]["docid"] = answers[i][0].doc_id;
+            result["answers"][req_id]["rank"] = round(answers[i][0].rank * 1000) / 1000.0;
         }
         else {
             result["answers"][req_id]["result"] = true;
             for (const RelativeIndex& entry : answers[i]) {
                 result["answers"][req_id]["relevance"].push_back({
-                                                                         {"docid", entry.doc_id},  // Используем doc_id
-                                                                         {"rank", round(entry.rank * 1000) / 1000.0}  // Используем rank
+                                                                         {"docid", entry.doc_id},
+                                                                         {"rank", round(entry.rank * 1000) / 1000.0}
                                                                  });
             }
         }
